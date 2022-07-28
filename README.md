@@ -1,7 +1,10 @@
 # smartmethod-iot
 this task is for smartmethods - iot
+
 1- create web include get for sensors(integer)
+
 2-create database 
+
 3-create web to store sensors values in database
 
 
