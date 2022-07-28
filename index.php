@@ -1,14 +1,7 @@
 <?php
 require  'connect.php';
 
-//function getData(){
-  //  $data = array();
-    //$data[1]=$_GET['sensor1'];
-    //$data[2]=$_GET['sensor2'];
-    //$data[3]=$_GET['sensor3'];
-    //$data[4]=$_GET['sensor4'];
-    //return $data;
-//}
+
 if(isset($_GET['submit'])){
     $name = $_GET["sensor1"];
     $name = $_GET["sensor2"];
@@ -16,11 +9,7 @@ if(isset($_GET['submit'])){
     $name = $_GET["sensor4"];
 
 $query ="INSERT INTO sensordata VALUES('sensor1','sensor2','sensor3','sensor4')";
-  // $info = getData();
-   //$insert= "INSERT INTO [sensordata] ([sensor1]
-   //,[sensor2]
-   //,[sensor3]
-   //,[sensor4])  VALUES ('$info[1]','$info[2]','$info[3]','$info[4]')";
+ 
 mysqli_query($connection,$query);
 echo
 "
@@ -48,7 +37,7 @@ echo
   <div class="col-sm-6">
   <div class="form-group">
   <label for="usr">sensor1:</label>
-  <input type="number" class="form-control" id="sensor1" name="sensor1" required value="">
+  <input type="number" class="form-control" id="sensor1" name="sensor1" >
 </div> 
 <div class="form-group">
   <label for="usr">sensor2:</label>
@@ -64,7 +53,6 @@ echo
 </div>
 <div class="btn-group"> 
   <button type="submit" class="btn btn-primary" name="submit">submit</button>
- 
 </div>
 </from>
  </div>
