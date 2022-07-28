@@ -18,8 +18,7 @@ this task is for smartmethods - iot
 
 *_ this message appear to make sure that connection success between the database and the web
 
-this message appear to make sure that connection success between the database and the web
-
+![connected](https://user-images.githubusercontent.com/108381198/181415622-2fef2398-20d0-4f61-b64f-5613489f28d2.png)
 
 
 
