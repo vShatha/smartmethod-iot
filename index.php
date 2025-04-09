@@ -3,12 +3,16 @@ require  'connect.php';
 
 
 if(isset($_GET['submit'])){
-    $name = $_GET["sensor1"];
-    $name = $_GET["sensor2"];
-    $name = $_GET["sensor3"];
-    $name = $_GET["sensor4"];
+    // استخدم متغيرات منفصلة لكل جهاز استشعار
+    $sensor1 = $_GET["sensor1"];
+    $sensor2 = $_GET["sensor2"];
+    $sensor3 = $_GET["sensor3"];
+    $sensor4 = $_GET["sensor4"];
 
-$query ="INSERT INTO sensordata VALUES('sensor1','sensor2','sensor3','sensor4')";
+ // الاستعلام مع القيم المدخلة من النموذج
+    $query = "INSERT INTO sensordata (sensor1, sensor2, sensor3, sensor4) 
+              VALUES ('$sensor1', '$sensor2', '$sensor3', '$sensor4')";
+
  
 mysqli_query($connection,$query);
 echo
